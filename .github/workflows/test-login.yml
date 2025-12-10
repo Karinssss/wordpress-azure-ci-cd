@@ -1,0 +1,15 @@
+name: Test Docker Login
+
+on:
+  workflow_dispatch:   # Para ejecutarlo manualmente
+
+jobs:
+  test-login:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Mostrar usuario (solo para debug)
+      run: echo "Usuario: ${{ secrets.DOCKER_USER }}"
+
+    - name: Probar login en Docker Hub
+      run: |
+        echo "${{ secrets.DOCKER_PASS }}" | docker login -u "${{ secrets.DOCKER_USER }}" --password-stdin
