@@ -488,7 +488,7 @@
                         <span>WordPress Hardening</span>
                     </div>
                     <h2 class="hero-title">
-                        Pipeline CI/CD segura para <span>Andrea</span> en la nube.
+                        Pipeline CI/CD segura para <span>WORDPRESS</span> en la nube.
                     </h2>
                     <p class="hero-subtitle">
                         Esta página es servida desde una imagen Docker de WordPress construida y publicada automáticamente con <strong>GitHub Actions</strong>. Cada cambio en el código genera un nuevo build, se analiza con <strong>Trivy</strong> y solo
